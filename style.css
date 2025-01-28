@@ -10,12 +10,44 @@
     --couleur-titres: #0A1100; /* Couleur principale */
     --font-titres: "Syne", sans-serif;
     --font-textes: "Syne", sans-serif;
-    --border-boutton: 30Px; /* Rayon des bordures */
-    --couleur-boutton: #BBD395;
+    --border: 30Px; /* Rayon des bordures */
+    --couleur-boutton: rgba(187, 211, 149, 1);
+    --couleur-fond:rgba(187, 211, 149, 0.42);
+    --shadow: 0px 4px 4px 0px rgba(85, 85, 85, 0.3);
   }
+
+
+
+  
 html {
     background-color: #FFFBF9;;
 
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-container{
+    display: flex;
+    background-color: var(--couleur-fond);
+    border-radius: var(--border);
+    width: 770px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+#benevole{
+    width: 827px;
+    height: 455px;
+}
+#navbar{
+    display: flex;
 }
 h2,h1{
 font-family: var(--font-titres);
@@ -26,7 +58,7 @@ p{
     font-family: var(--font-textes);
 }
 .bouttons{
-border-radius: var(--border-boutton);
+border-radius: var(--border);
 background-color: var(--couleur-boutton);
 border-width: 0cm;
 padding: 5px;
@@ -34,8 +66,90 @@ padding: 5px;
 .grandboutton{
     width: 300px;
     height: 43px;
+    box-shadow: var(--shadow);
 }
 .petitboutton{
-    width: 20px;
-    height: 30px;
+    width: 161px;
+    height: 33px;
+}
+.container{
+    max-width: 1080px ;
+    margin: auto;
+}
+#graph-container{
+    display: flex;
+    padding: 20px;
+}
+.banderole{
+    display: flex;
+    gap: 20px;
+}
+.mots{
+    border: 1px var(--couleur-boutton);
+}
+.grande-carte{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.carte{
+    width: 325px;
+    height: 295px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    padding: 5px;
+    border-radius: var(--border);
+}
+.personnes{
+    width: 87px;
+    height: 87px;
+    border-radius: 100%;
+}
+#fondvert {
+    background-color: #BBD395;
+    display: flex;
+     
+    #presentation-content {
+        gap: 100px;
+
+     }
+     
+}
+#footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgba(187, 211, 149, 0.427);
+}
+#formulaire1{
+    display: flex;
+    padding-top: 10px;
+    gap: 20px;
+    justify-content: space-around;
+}
+#formulaire2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.inputinfo{
+    width: 180px;
+    height: 40px;
+    border-radius: 9px;
+}
+#coche{
+    width: 15px;
+    height: 15px;
+}
+#accept{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+#messagecontact{
+    width: 600px;
+    height: 70px;
+    border-radius: 9px;
 }
