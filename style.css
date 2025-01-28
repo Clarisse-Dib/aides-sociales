@@ -1,4 +1,41 @@
+/* // <uniquifier>: Use a unique and descriptive class name// 
+
+.syne-<uniquifier> {
+  font-family: "Syne", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+:root {
+    --couleur-titres: #0A1100; /* Couleur principale */
+    --font-titres: "Syne", sans-serif;
+    --font-textes: "Syne", sans-serif;
+    --border-boutton: 30Px; /* Rayon des bordures */
+    --couleur-boutton: #BBD395;
+  }
 html {
-    background-color: black;
-    color: beige;
+    background-color: #FFFBF9;;
+
+}
+h2,h1{
+font-family: var(--font-titres);
+color: var(--couleur-titres);
+
+}
+p{
+    font-family: var(--font-textes);
+}
+.bouttons{
+border-radius: var(--border-boutton);
+background-color: var(--couleur-boutton);
+border-width: 0cm;
+padding: 5px;
+}
+.grandboutton{
+    width: 300px;
+    height: 43px;
+}
+.petitboutton{
+    width: 20px;
+    height: 30px;
 }
