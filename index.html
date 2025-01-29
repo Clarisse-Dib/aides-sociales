@@ -32,68 +32,84 @@
          </div>
    </nav>
    </div>
-   <div class="container">
-      <h1>Les droits sociaux, un rempart contre l'invisible</h1>
-      <a href="documentation.html"><button class="bouttons grandboutton">télécharger la démo</button></a>
+   <div id="containerhun">
+      <h1 id="hunIndex">Les droits sociaux, un rempart contre l'invisible</h1>
    </div>
-   <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
+   <div id="introIndex">
+      <a href="documentation.html"><button class="bouttons grandboutton">Télécharger une démo</button></a>
+
+      <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
+   </div>
 </header>
-   <main>
-<!-- informations -->
-      <section>
-         <div class="container">
-            <div>
-               <img src="medias\image-faits.png" alt="image bénévole">
-               <h2>“Selon une études, la France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”
-               </h2>
-            </div>
-            <p>"On ne choisit pas de tomber, mais on a tous besoin d’une main pour se relever."  Jean, ancien SDF</p>
-            
-            <p>"La rue, c’est une bataille quotidienne où chaque aide compte."  Ahmed,  SDF</p>
+
+
+<main>
+   <!-- informations -->
+   <section id="sectionun">
+      <div class="container" id="accrochecontainer">
+
+         <div id="accroche">
+            <img src="medias\donateur.svg" alt="image bénévole" id="imgBenevoledeux">
+
+            <h2 id="hdeuxaccrocheun">“Selon une études, la</h2>
          </div>
-      </section>
+         <h2 id="hdeuxaccrochedeux">France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”
+         </h2>
+
+      </div>
+      <div id="smallAccroche">
+         <p id="accrochePUn">"On ne choisit pas de tomber, mais on a tous besoin d’une main pour se relever." Jean,
+            ancien SDF</p>
+
+         <p id="accrochePDeux">"La rue, c’est une bataille quotidienne où chaque aide compte." Ahmed, SDF</p>
+      </div>
+      </div>
+   </section>
 <!-- présentation de l'appli -->
-      <section id="fondvert">
-         <div class="container">
-            <div id="presentation-content">
-               <h2 class="grandtitre2">Notre idée derrière ActiDroits</h2>
-               <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
-                  donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
-                  <a href="documentation.html"> <button class="bouttons grandboutton">télécharger la démo</button></a>
-               </div>
-               <img src="medias\telephone.png" alt="photo de notre téléphone">
-            </div>
-      </section>
+<section id="fondvert">
+   <div class="container" id="presContainer">
+      <div id="presentationcontent">
+         <h2>Notre idée derrière ActiDroits</h2>
+         <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
+            donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
+         <a href="documentation.html"> <button class="bouttons grandboutton" id="buttonwhite">Télécharger la démo</button></a>
+      </div>
+      <div id="presentationtel">
+         <img src="medias\telephone.svg" alt="photo de notre téléphone" id="imgTelUn">
+
+      </div>
+   </div>
+</section>
 
 <!-- les différents graphique -->
       <section id="graph-container">
-         <div class="container">
+         <div class="container" id="containergraphique">
             <div>
-               <h2>Les Sdf en quelques chiffres</h2>
-               <ol>
-                  <li>200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans des conditions précaires.; </li>
-                  <li>
+               <h2 id="titregraph">Les Sdf en quelques chiffres</h2>
+               <ul id="listestats">
+                  <li class="elementslistestats">200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans des conditions précaires.; </li>
+                  <li class="elementslistestats">
                      145 000 places d’hébergement d’urgence sont disponibles, mais insuffisantes pour répondre à la
                      demande.
                   </li>
-                  <li>
+                  <li class="elementslistestats">
                      
                      À Paris, 146 bébés sont nés dans la rue en 2023, une situation alarmante.
                   </li>
-                  <li>
+                  <li class="elementslistestats">
                      
                      ¼ des sans-abri ont un emploi, mais restent dans une précarité extrême.
                   </li>
-                  <li>
+                  <li class="elementslistestats">
                      
                      38% des sans-abri sont des femmes, souvent invisibles mais vulnérables aux violences.
                   </li>
-                  <li>
+                  <li class="elementslistestats">
 
                      83% des SDF ressentent le rejet des passants, accentuant leur détresse sociale.</li>
-                  </ol>
+                  </ul>
                </div>
-               <img src="medias\graph.png" alt="superbe graphique">
+               <img src="medias\graph.png" alt="superbe graphique" id="graphique40">
             </div>
             </section>
 
@@ -122,7 +138,7 @@
       </section>
 <!-- les témoignages -->
       <section>
-         <h2 class="grandtitre2">Les associtations qui ont déjà accepté de nous rejoindre</h2>
+         <h2 class="grandtitre2">Les associtations qui ont déjà accepté de <span id="rejoindrevert">nous rejoindre</span></h2>
          <!-- la banderole de mots clées -->
          <div class="container">
             <div>
