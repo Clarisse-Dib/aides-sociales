@@ -392,16 +392,19 @@ height: 110px;
     width: 40px;
     background-color: var(--couleur-titres);
 }
-.parcour-haut{
+/* #parcours-utilisateur{
+    scroll-direction:horizontal;
+} */
+.parcours-haut{
 display: flex;
 }
-.parcour-milieu{
+.parcours-milieu{
 display: flex;
 justify-content: space-around;
 padding-left: 80px;
 gap: 80px;
 }
-.parcour-fin{
+.parcours-fin{
 display: flex ; 
 justify-content: center;
 padding-left: 80px;
@@ -486,12 +489,12 @@ font-family: var(--font-titres);
  padding: 5%;
     
 } 
-.persona {
+.dividedSection{
     display: flex;
 }
 
 
-.personaImg img{
+.personaImg img,.graphiqueImg img{
     margin:5% 15%;
 
 }
@@ -515,3 +518,6 @@ display: flex;
     padding-bottom: 20px;
 }
 
+.graphiqueImg img {
+    margin-right: 73px;
+}
