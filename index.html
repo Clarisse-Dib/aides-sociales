@@ -11,32 +11,33 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/fcd6974846.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-<!-- la bar de navigation -->
-   <nav>
-      <div id="nav-container">
-         <div id="navbar">
-            <img src="medias\logo-nav.png" alt="logo">
-            <p>Association d'aide pour les sans abris</p>
-         </div>
-         <div>
-            <a href="index.html">accueil </a>
-            <a href="documentation.html">documentation</a>
-            <a href="#footer"><button class="bouttons petitboutton">rejoindre</button></a>
-         </div>
-      </div>
-   </nav>
 
-<!-- la page d'accueil -->
-   <header>
-      <div class="container">
-      <h1>Les droits sociaux, un rempart contre l'invisible</h1>
-         <a href="documentation.html"><button class="bouttons grandboutton">télécharger la démo</button></a>
+<header>
+   <div id="nav-container">
+   <nav>
+      <div id="navbarLeft">
+         <img src="medias\logo-nav.png" alt="image" id="logoAsso">
+         <p>Association d'aide pour les sans abris</p>
+         <div id="traitNav"></div>
       </div>
-         <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
-   </header>
+         <div id="navbarRight">
+            <a href="index.html">Accueil </a>
+            <a href="documentation.html">Documentation</a>
+            <a href="#footer"><button class="bouttons petitboutton">Rejoindre</button></a>
+         </div>
+   </nav>
+   </div>
+   <div class="container">
+      <h1>Les droits sociaux, un rempart contre l'invisible</h1>
+      <a href="documentation.html"><button class="bouttons grandboutton">télécharger la démo</button></a>
+   </div>
+   <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
+</header>
    <main>
 <!-- informations -->
       <section>
@@ -55,7 +56,7 @@
       <section id="fondvert">
          <div class="container">
             <div id="presentation-content">
-               <h2>Notre idée derrière ActiDroits</h2>
+               <h2 class="grandtitre2">Notre idée derrière ActiDroits</h2>
                <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
                   donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
                   <a href="documentation.html"> <button class="bouttons grandboutton">télécharger la démo</button></a>
@@ -97,22 +98,31 @@
             </section>
 
 <!-- les étapes d'utilisation  -->
-      <section>
+      <section id="presentationapp">
+         <div>
+            <img src="medias/telephones.png" alt="les téléphones">
+            <div class="store">
+               <a href="https://www.apple.com/fr/app-store/"><img src="medias\appstore.svg" alt="appstore"></a>
+               <a href="https://play.google.com/store/games?device=windows"><img src="medias\playstore.svg" alt="playstore"></a>
+            </div>
+         </div>
          <div class="container">
-            <img src="medias\telephone-a-plan.png" alt="téléphones avec notre application">
-            <img src="medias\telephone-b-plan.png" alt="téléphones avec notre application">
-            <div>
-               <div>
-                  <p>1 Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
-                  <p>3 Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
+            <h2 id="partieapp" class="grandtitre2">Un accès aux droits sociaux pour les SDF</h2>
+            <div class="teste">
+               <p id="plan">Notre Plan</p>
+               <div id="explicationappcontainer">
+                  <div id="explicationsapp">
+                     <p>1. Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
+                     <p>3. Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
+                  </div>
+                  <p id="explication2">2. Lui faire répondre à un simple questionnaire.</p>
                </div>
-               <p>2 Lui faire répondre à un simple questionnaire.</p>
             </div>
          </div>
       </section>
 <!-- les témoignages -->
       <section>
-         <h2>Les associtations qui ont déjà accepté de nous rejoindre</h2>
+         <h2 class="grandtitre2">Les associtations qui ont déjà accepté de nous rejoindre</h2>
          <!-- la banderole de mots clées -->
          <div class="container">
             <div>
@@ -181,7 +191,21 @@
                   <button class="bouttons petitboutton" type="submit">Envoyer</button>
                </div>
             </div>
-            <div> ICONE </div>
+            <p id="icons"> Suivez nous : </p>
+            <div>
+
+               <a href=""> <i class="fa-solid fa-phone"></i></a>
+               <a href="" > <i class="fa-solid fa-envelope"></i></a>
+               <a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+               <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            
+               
+            </div>
+            
+         </form>
+      </div>
+
          </form>
       </div>
    </footer>

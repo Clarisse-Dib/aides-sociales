@@ -7,12 +7,12 @@
   font-style: normal;
 } */
 :root {
-    --couleur-titres: #0A1100; /* Couleur principale */
+    --couleur-titres: #353B2A; /* Couleur principale */
     --font-titres: "Syne", sans-serif;
     --font-textes: "Syne", sans-serif;
     --border: 30Px; /* Rayon des bordures */
     --couleur-boutton: rgba(187, 211, 149, 1);
-    --couleur-fond:rgba(187, 211, 149, 0.42);
+    --couleur-fond:rgb(187, 211, 149);
     --shadow: 0px 4px 4px 0px rgba(85, 85, 85, 0.3);
   }
 
@@ -27,32 +27,84 @@ body{
     margin: 0px;
     padding: 0px;
 }
-nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+a{
+    text-decoration: none;
+    color: var(--couleur-titres)
 }
+
 #nav-container{
     display: flex;
-    background-color: var(--couleur-fond);
-    border-radius: var(--border);
-    width: 770px;
-    height: 65px;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    top: 20px;
+    position: fixed;
+    overflow: hidden;
 }
+
+nav{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    background-color: #bbd39599;
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+}
+
+
+#navbarLeft{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    gap: 15px;
+}
+
+#logoAsso{
+    width: 40px;
+    height: 40px;
+}
+
+#traitNav{
+    height: 35px;
+    width: 0.5px;
+    background-color: #0A1100;
+}
+nav p {
+    font-size: 14px;
+    width: 154px;
+}
+
+#navbarRight{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    width: 63%;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
 #benevole{
     width: 827px;
     height: 455px;
+    padding-top: 10px;
+    padding-left: 320px;
 }
-#navbar{
-    display: flex;
-}
-h2,h1{
+
+
+
+
+h2,h1,h3{
 font-family: var(--font-titres);
 color: var(--couleur-titres);
-
+justify-self: center;
+}
+.grandtitre2{
+    font-size: 60px;
 }
 p{
     font-family: var(--font-textes);
@@ -67,15 +119,31 @@ padding: 5px;
     width: 300px;
     height: 43px;
     box-shadow: var(--shadow);
+    color: var(--couleur-titres);
 }
 .petitboutton{
     width: 161px;
     height: 33px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--couleur-titres);
 }
+
 .container{
     max-width: 1080px ;
     margin: auto;
+    padding-top: 130px;
+  
+    /* h1 {
+        font-family: var(--font-textes,);
+        font-weight: var(--font-textes);
+    } */
 }
+p{
+    font-family: var(--font-textes);
+    color: var(--couleur-titres);
+}
+
 #graph-container{
     display: flex;
     padding: 20px;
@@ -83,9 +151,6 @@ padding: 5px;
 .banderole{
     display: flex;
     gap: 20px;
-}
-.mots{
-    border: 1px var(--couleur-boutton);
 }
 .grande-carte{
     display: flex;
@@ -106,15 +171,46 @@ padding: 5px;
     height: 87px;
     border-radius: 100%;
 }
-#fondvert {
-    background-color: #BBD395;
+.img-doc{
+width: 100%;
+padding-top: 100px;
+}
+.img-fideliter{
+    background-image: url(medias\userflow-doc.svg);
+    width: 100%;
+}
+#presentationapp{
     display: flex;
-     
-    #presentation-content {
-        gap: 100px;
-
-     }
-     
+    background-color: #bbd395;
+}
+.store{
+    display: flex;
+    padding-left: 20px;
+}
+#explicationsapp{
+display: flex;
+flex-direction: column;
+gap: 180px;
+}
+#explicationappcontainer{
+    display: flex;
+    font-family: var(--font-textes);
+    font-size: 25px;
+}
+#explication2{
+    display: flex;
+    align-self: center;
+}
+.mots{
+border:solid,1px;
+border-color: black;
+border-radius: 20px;
+padding:10px;
+background-color: #FFFBF9;
+}
+.mots:hover{
+    background-color: #E3EBD0;
+    transition: background-color 200ms;
 }
 #footer{
     display: flex;
@@ -138,6 +234,9 @@ padding: 5px;
     height: 40px;
     border-radius: 9px;
 }
+.userflow{
+    max-width: 99vw;
+}
 #coche{
     width: 15px;
     height: 15px;
@@ -152,4 +251,30 @@ padding: 5px;
     width: 600px;
     height: 70px;
     border-radius: 9px;
+}
+
+i { 
+
+    color: #0A1100;
+    padding: 10px;
+    padding-left: 80px;
+    padding-bottom:20px ;
+}
+
+#icons {
+    font-family: var(--font-textes);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 250px;
+}
+
+#titre-doc {
+font-family: var(--font-titres);
+    margin-top: 200px;
+    padding-left: 400px;
+    letter-spacing: 7px;
+    padding: 40px;
+    text-align: center;
+    background: rgb(255,251,249);
+    background: linear-gradient(90deg, rgba(255,251,249,1) 0%, rgba(187,211,149,1) 100%); 
 }
