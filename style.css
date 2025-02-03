@@ -6,10 +6,25 @@
   font-weight: 400;
   font-style: normal;
 } */
+
+/* {"Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }; */
+
+  
+h1 {
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 55px;
+  }
+
 :root {
     --couleur-titres: #353B2A; /* Couleur principale */
-    --font-titres: "Syne", sans-serif;
-    --font-textes: "Syne", sans-serif;
+    --font-titres: "Syne", serif;
+    --font-textes: "Syne", serif;
     --border: 30Px; /* Rayon des bordures */
     --couleur-boutton: rgba(187, 211, 149, 1);
     --couleur-fond:rgb(187, 211, 149);
@@ -104,11 +119,7 @@ nav p {
     justify-content: space-around;
 }
 
-#hunIndex {
-    font-size: 54px;
-    font-weight: 300;
-    width: 726px;
-}
+
 
 
 #benevole {
@@ -136,13 +147,21 @@ nav p {
 }
 
 #hdeuxaccrocheun {
-    font-size: 67px;
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+    font-size: 60px;
     margin-bottom: 12px;
-    margin-left: 210px;
+    margin-left: 175px;
 }
 
 #hdeuxaccrochedeux {
-    font-size: 67px;
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: 0;
+    font-style: normal;
+    font-size: 60px;
     margin-top: 0px;
 }
 
@@ -207,7 +226,7 @@ nav p {
 
 
 
-h2,h1,h3{
+h2,h3{
 font-family: var(--font-titres);
 color: var(--couleur-titres);
 justify-self: center;
@@ -465,6 +484,10 @@ font-family: var(--font-titres);
     padding-bottom: 25px;
 }
 #ActidroitsID{
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
     width: 100%;
 }
@@ -503,8 +526,206 @@ display: flex;
 }
 #userflowgraph{
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .graphiqueImg img {
     margin-right: 73px;
 }
+
+#FAQ{
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+#faqAllDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.FaqDetail{
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+    border: #353B2A 1px solid;
+    background-color: #bbd3953d;
+    border-radius: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-textes);
+    gap : 5px
+}
+
+summary{
+    width: 100%;
+    font-family: var(--font-titres);
+    cursor: pointer;
+}
+
+summary::marker {
+    color: #353B2A;
+  }
+  @media screen and (max-width: 900px) {
+    #navP {
+        font-size: 8px;
+        width: 80%;
+      }
+      .petitboutton {
+        width: 75px;
+        font-size: 10px;}
+    h1{
+        font-size: 35px;
+  width: 100%;
+  text-align: center;
+    }
+    #introIndex{
+        flex-direction: column;
+        align-items: center;
+    }
+    #titre-doc{
+        letter-spacing: 4px;
+    }
+    #benevole{
+        width: 100%;
+    }
+    #hdeuxaccrocheun{
+        text-align: left;
+        font-size: 25px;
+        margin-left: 0%;
+        margin-top: 70px;
+        margin-bottom:0px;
+    } 
+    #hdeuxaccrochedeux{
+        text-align: center;
+        font-size: 25px;
+    }
+    #smallAccroche { 
+        flex-direction: column;
+    }
+    #accrochePUn {
+        width: 50%;
+        align-self: flex-start;
+        padding: 10px;}
+    #accrochePDeux {
+        margin-top: 60px;
+        width: 50%;
+        align-self: flex-end;
+        padding: 10px;
+    }
+    #fondvert{
+        height: 100%;
+    }
+    #presContainer {
+        flex-direction: column;
+      }
+      #presentationcontent{
+        width: 100%;
+        align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+      }
+      #presentationtel{
+        width: 100%;
+      }
+      #containergraphique {
+        flex-direction: column;}
+    .grande-carte{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .carte{
+        width: 260px;
+  font-size: 13px;
+    }
+    .grandtitre2 {
+        font-size: 25px;
+        text-align: center;}      
+        #graphique40 {
+            padding-top: 15px;
+            width: 100%;}
+            #telephone{
+                width: 100%;
+            }
+            .banderole {
+                gap: 5px;
+            }
+            #presentationapp {
+                flex-direction: column;
+            }
+            .mots{
+            padding: 5px;
+        font-size: 10px;}
+            
+
+
+
+
+#formulaire1{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inputinfo {
+    width: 41%;
+    padding: 5px;
+}
+#mail{
+    width: 88%;
+}
+#formulaire2{
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#accepter{
+    font-size: 10px;
+    margin: 2px;
+}
+#messagecontact{
+    width: 89%;
+    height: 110px;
+}
+#accept {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icons{
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+}
+
+.icon-container{
+    display: flex;
+    gap: 20px;
+}
+.i{
+    width: fit-content;
+}
+.imggraph{
+    width: 75%;
+}
+
+
+.imgprsn{
+width: 100%;
+margin: 3%!important;
+}
+
+#leftImg{
+    width: 370px;
+}
+
+.titre-container h2{
+    font-size: 40px;
+}
+
+  }

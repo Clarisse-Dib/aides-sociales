@@ -8,118 +8,122 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Landing Page</title>
    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+   <script src="https://kit.fontawesome.com/fcd6974846.js" crossorigin="anonymous"></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/fcd6974846.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
-   <div id="nav-container">
-   <nav>
-      <div id="navbarLeft">
-         <img src="medias\logo-nav.png" alt="image" id="logoAsso">
-         <p>Association d'aide pour les sans abris</p>
-         <div id="traitNav"></div>
+   <header>
+      <div id="nav-container">
+         <nav>
+            <div id="navbarLeft">
+               <img src="medias\logo-nav.png" alt="image" id="logoAsso">
+               <p id="navP">Association d'aide pour les sans abris</p>
+               <div id="traitNav"></div>
+            </div>
+            <div id="navbarRight">
+               <a href="index.html">Accueil </a>
+               <a href="documentation.html">Documentation</a>
+               <a href="#footer"><button class="bouttons petitboutton">Rejoindre</button></a>
+            </div>
+         </nav>
       </div>
-         <div id="navbarRight">
-            <a href="index.html">Accueil </a>
-            <a href="documentation.html">Documentation</a>
-            <a href="#footer"><button class="bouttons petitboutton">Rejoindre</button></a>
+      <div id="containerhun">
+         <h1 id="hunIndex">Les droits sociaux, un rempart contre l'invisible</h1>
+      </div>
+      <div id="introIndex">
+         <a href="documentation.html"><button class="bouttons grandboutton">Télécharger la démo</button></a>
+
+         <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
+      </div>
+   </header>
+
+
+   <main>
+      <!-- informations -->
+      <section id="sectionun">
+         <div class="container" id="accrochecontainer">
+
+            <div id="accroche">
+               <img src="medias\donateur.svg" alt="image bénévole" id="imgBenevoledeux">
+
+               <h2 id="hdeuxaccrocheun">“Selon une étude, la</h2>
+            </div>
+            <h2 id="hdeuxaccrochedeux">France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”
+            </h2>
+
          </div>
-   </nav>
-   </div>
-   <div id="containerhun">
-      <h1 id="hunIndex">Les droits sociaux, un rempart contre l'invisible</h1>
-   </div>
-   <div id="introIndex">
-      <a href="documentation.html"><button class="bouttons grandboutton">Télécharger une démo</button></a>
+         <div id="smallAccroche">
+            <p id="accrochePUn">"On ne choisit pas de tomber, mais on a tous besoin d’une main pour se relever." Jean,
+               ancien SDF</p>
 
-      <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
-   </div>
-</header>
-
-
-<main>
-   <!-- informations -->
-   <section id="sectionun">
-      <div class="container" id="accrochecontainer">
-
-         <div id="accroche">
-            <img src="medias\donateur.svg" alt="image bénévole" id="imgBenevoledeux">
-
-            <h2 id="hdeuxaccrocheun">“Selon une études, la</h2>
+            <p id="accrochePDeux">"La rue, c’est une bataille quotidienne où chaque aide compte." Ahmed, SDF</p>
          </div>
-         <h2 id="hdeuxaccrochedeux">France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”
-         </h2>
+         </div>
+      </section>
+      <!-- présentation de l'appli -->
+      <section id="fondvert">
+         <div class="container" id="presContainer">
+            <div id="presentationcontent">
+               <h2>Notre idée derrière ActiDroits</h2>
+               <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
+                  donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
+               <a href="documentation.html"> <button class="bouttons grandboutton" id="buttonwhite">Télécharger la
+                     démo</button></a>
+            </div>
+            <div id="presentationtel">
+               <img src="medias\telephone.svg" alt="photo de notre téléphone" id="imgTelUn">
 
-      </div>
-      <div id="smallAccroche">
-         <p id="accrochePUn">"On ne choisit pas de tomber, mais on a tous besoin d’une main pour se relever." Jean,
-            ancien SDF</p>
+            </div>
+         </div>
+      </section>
 
-         <p id="accrochePDeux">"La rue, c’est une bataille quotidienne où chaque aide compte." Ahmed, SDF</p>
-      </div>
-      </div>
-   </section>
-<!-- présentation de l'appli -->
-<section id="fondvert">
-   <div class="container" id="presContainer">
-      <div id="presentationcontent">
-         <h2>Notre idée derrière ActiDroits</h2>
-         <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
-            donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
-         <a href="documentation.html"> <button class="bouttons grandboutton" id="buttonwhite">Télécharger la démo</button></a>
-      </div>
-      <div id="presentationtel">
-         <img src="medias\telephone.svg" alt="photo de notre téléphone" id="imgTelUn">
-
-      </div>
-   </div>
-</section>
-
-<!-- les différents graphique -->
+      <!-- les différents graphique -->
       <section id="graph-container">
          <div class="container" id="containergraphique">
             <div>
                <h2 id="titregraph">Les Sdf en quelques chiffres</h2>
                <ul id="listestats">
-                  <li class="elementslistestats">200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans des conditions précaires.; </li>
+                  <li class="elementslistestats">200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans
+                     des conditions précaires.</li>
                   <li class="elementslistestats">
-                     145 000 places d’hébergement d’urgence sont disponibles, mais insuffisantes pour répondre à la
+                     145 000 places d’hébergements d’urgence sont disponibles, mais insuffisantes pour répondre à la
                      demande.
                   </li>
                   <li class="elementslistestats">
-                     
+
                      À Paris, 146 bébés sont nés dans la rue en 2023, une situation alarmante.
                   </li>
                   <li class="elementslistestats">
-                     
-                     ¼ des sans-abri ont un emploi, mais restent dans une précarité extrême.
+
+                     ¼ des sans-abris ont un emploi, mais restent dans une précarité extrême.
                   </li>
                   <li class="elementslistestats">
-                     
-                     38% des sans-abri sont des femmes, souvent invisibles mais vulnérables aux violences.
+
+                     38% des sans-abris sont des femmes, souvent invisibles mais vulnérables aux violences.
                   </li>
                   <li class="elementslistestats">
 
                      83% des SDF ressentent le rejet des passants, accentuant leur détresse sociale.</li>
-                  </ul>
-               </div>
-               <img src="medias\graph.png" alt="superbe graphique" id="graphique40">
+               </ul>
             </div>
-            </section>
+            <img src="medias\graph.png" alt="superbe graphique" id="graphique40">
+         </div>
+      </section>
 
-<!-- les étapes d'utilisation  -->
+      <!-- les étapes d'utilisation  -->
       <section id="presentationapp">
          <div>
-            <img src="medias/telephones.png" alt="les téléphones">
+            <img id="telephone" src="medias/telephones.png" alt="les téléphones">
             <div class="store">
                <a href="https://www.apple.com/fr/app-store/"><img src="medias\appstore.svg" alt="appstore"></a>
-               <a href="https://play.google.com/store/games?device=windows"><img src="medias\playstore.svg" alt="playstore"></a>
+               <a href="https://play.google.com/store/games?device=windows"><img src="medias\playstore.svg"
+                     alt="playstore"></a>
             </div>
          </div>
          <div class="container">
@@ -136,13 +140,14 @@
             </div>
          </div>
       </section>
-<!-- les témoignages -->
+      <!-- les témoignages -->
       <section>
-         <h2 class="grandtitre2">Les associtations qui ont déjà accepté de <span id="rejoindrevert">nous rejoindre</span></h2>
+         <h2 class="grandtitre2">Les associations qui ont déjà acceptées de <span id="rejoindrevert">nous
+               rejoindre</span></h2>
          <!-- la banderole de mots clées -->
          <div class="container">
             <div>
-               
+
                <div class="banderole">
                   <p class="mots">Restos du cœur</p>
                   <p class="mots">Secours Populaire</p>
@@ -156,8 +161,8 @@
                   <p class="mots">Armée du salut</p>
                   <p class="mots">Restos du cœur</p>
                   <p class="mots">Secours Catholique</p>
-                  <p class="mots">Restos du cœur</p>
                   <p class="mots">AFM-Telethon</p>
+                  <p class="mots">Restos du cœur</p>
                </div>
             </div>
             <!-- avis -->
@@ -168,26 +173,30 @@
                   <img class="personnes" src="medias\undraw_pic-profile_nr49.png" alt="première personne">
                   <h4>Jon d'hoe</h4>
                   <p>bénévole en maraude</p>
-                  <p>“Grace a cet application , je peux aider plus rapidement les personnes que je rencontre. Plus besoin de chercher des informations pendant des heures, tout est centralisé et adapté à leur situation."</p>
+                  <p>“Grâce à cette application , je peux aider plus rapidement les personnes que je rencontre. Plus
+                     besoin de chercher des informations pendant des heures, tout est centralisé et adapté à leur
+                     situation."</p>
                </div>
                <!-- 2 -->
                <div class="carte">
                   <img class="personnes" src="medias\undraw_male-avatar_zkzx.png" alt="deuxième personne">
                   <h4>Steven Stiivie</h4>
                   <p>utilisateur SDF</p>
-                  <p>On m’a aidé à trouver un hébergement en une soirée grâce à l’appli. C’est la première fois que je me sens écouté et que tout va aussi vite</p>
+                  <p>"On m’a aidé à trouver un hébergement en une soirée grâce à l’appli. C’est la première fois que je
+                     me sens écouté et que tout va aussi vite."</p>
                </div>
                <!-- 3 -->
                <div class="carte">
                   <img class="personnes" src="medias\undraw_female-avatar_7t6k.png" alt="troisième personne">
                   <h4>Vinni Vitchi</h4>
                   <p>citoyenne solidaire</p>
-                  <p>Cette appli est une révolution. Elle montre qu’avec un peu de technologie et beaucoup d’humanité, on peut vraiment faire la différence pour ceux qui en ont le plus besoin</p>
+                  <p>"Cette appli est une révolution. Elle montre qu’avec un peu de technologie et beaucoup d’humanité,
+                     on peut vraiment faire la différence pour ceux qui en ont le plus besoin."</p>
                </div>
             </div>
-            <p>*pour des raisons d’anonymat, les noms ont été remplacer par des alias</p>
+            <p>*pour des raisons d’anonymat, les noms ont été remplacé par des alias</p>
          </div>
-         </section>
+      </section>
    </main>
 
    <footer id="footer">
@@ -197,32 +206,28 @@
             <div id="formulaire1">
                <input type="text" placeholder="Prénom" class="inputinfo">
                <input type="text" placeholder="Nom" class="inputinfo">
-               <input type="text" placeholder="Mail" class="inputinfo">
+               <input id="mail" type="text" placeholder="Mail" class="inputinfo">
             </div>
             <div id="formulaire2">
                <input type="text" placeholder="Taper votre message ici..." id="messagecontact">
                <div id="accept">
                   <button id="coche"> </button>
-                  <p>J'accepte les termes et conditions d'utilisation</p>
+                  <p id="accepter">J'accepte les termes et conditions d'utilisation</p>
                   <button class="bouttons petitboutton" type="submit">Envoyer</button>
                </div>
             </div>
-            <p id="icons"> Suivez nous : </p>
-            <div>
-
-               <a href=""> <i class="fa-solid fa-phone"></i></a>
-               <a href="" > <i class="fa-solid fa-envelope"></i></a>
-               <a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>
-               <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-               <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-            
-               
-            </div>
-            
          </form>
-      </div>
+         <p class="icons"> Suivez nous : </p>
+         <div class="icon-container">
 
-         </form>
+            <a href=""> <i class="i fa-solid fa-phone"></i></a>
+            <a href=""> <i class="i fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/?locale=fr_FR"><i class="i fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="i fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="i fa-brands fa-youtube"></i></a>
+
+
+         </div>
       </div>
    </footer>
 
