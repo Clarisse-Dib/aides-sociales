@@ -15,8 +15,8 @@
          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />
       <script src="https://kit.fontawesome.com/fcd6974846.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
    </head>
 </head>
@@ -28,12 +28,13 @@
       <div id="nav-container">
          <nav>
             <div id="navbarLeft">
-               <img src="medias\logo-nav.png" alt="image" id="logoAsso">
-               <p>Association d'aide pour les sans abris</p>
+               <img src="medias/logo-nav.png" alt="logo" id="logoAsso">
+               <p id="navP">Association d'aide pour les sans-abris</p>
                <div id="traitNav"></div>
             </div>
+            <div id="burger-menu">☰</div> <!-- Icône burger -->
             <div id="navbarRight">
-               <a href="index.html">Accueil </a>
+               <a href="index.html">Accueil</a>
                <a href="documentation.html">Documentation</a>
                <a href="#footer"><button class="bouttons petitboutton">Rejoindre</button></a>
             </div>
@@ -56,6 +57,38 @@
             <img src="medias\bulle-bas.png" alt="bulle bas" id="leftImg">
 
       </section>
+      <!-- chiffres -->
+      <section>
+         <div class="dividedSection">
+            <img src="medias\graph.png" alt="superbe graphique" id="graphique40">
+            <div class="greenbackground far-right">
+               <h2 id="titregraph">Les Sdf en quelques chiffres</h2>
+               <ul id="listestats">
+                  <li class="elementslistestats">200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans
+                     des conditions précaires.</li>
+                  <li class="elementslistestats">
+                     145 000 places d’hébergements d’urgence sont disponibles, mais insuffisantes pour répondre à la
+                     demande.
+                  </li>
+                  <li class="elementslistestats">
+
+                     À Paris, 146 bébés sont nés dans la rue en 2023, une situation alarmante.
+                  </li>
+                  <li class="elementslistestats">
+
+                     ¼ des sans-abris ont un emploi, mais restent dans une précarité extrême.
+                  </li>
+                  <li class="elementslistestats">
+
+                     38% des sans-abris sont des femmes, souvent invisibles mais vulnérables aux violences.
+                  </li>
+                  <li class="elementslistestats">
+
+                     83% des SDF ressentent le rejet des passants, accentuant leur détresse sociale.</li>
+               </ul>
+            </div>
+         </div>
+      </section>
       <!-- les persona -->
       <section>
          <div class="dividedSection">
@@ -71,7 +104,8 @@
                      de
                      mieux comprendre et exercer leurs droits. Intuitive et complète.</p>
                   <h3>Nos ressources</h3>
-                  <p>L'application regroupe des ressources clés, des procédures administratives et des points de contacts
+                  <p>L'application regroupe des ressources clés, des procédures administratives et des points de
+                     contacts
                      utiles,
                      offrant ainsi un accompagnement concret et rapide. Avec cet outil, les travailleurs sociaux peuvent
                      agir
@@ -97,13 +131,13 @@
       <section>
          <div class="dividedSection">
 
-            <div class="graphiqueImg"> 
+            <div class="graphiqueImg">
                <img class="imggraph" src="medias/graph-a.svg" alt="">
-               <img  class="imggraph" src="medias/graph-b.svg" alt="">
+               <img class="imggraph" src="medias/graph-b.svg" alt="">
             </div>
 
 
-            <div class="greenbackground">
+            <div class="greenbackground 2nd">
                <h2>Le pourquoi ?</h2>
                <h3>Notre Plan</h3>
                <p>Notre projet est une une réponse aux 17 Objectifs pour sauver le monde de l’ONU.
@@ -123,66 +157,209 @@
             </div>
          </div>
       </section>
-      <!-- parcours utilisateur et user flow -->
-      <section id="parcours-utilisateur">
-         <div class="container">
-            <h2>Comment ça fonctionne ? </h2>
-
-            <h3>Notre problématique :</h3>
-            <p>Comment permettre aux acteurs sociaux de donner accès aux personnes sans domicile fixe à des informations
-               sur les aides sociales ?</p>
-            <h3>Parcours Utilisateurs :</h3>
-            <div class="plan">
+      <!-- autre version + scroll horizontal -->
+      <div class="plan">
+         <div id="parcours-list-wrapper" class="d-flex">
+            <div class="d-flex">
                <div class="plan-container">
-                  <h4>Problématique</h4>
-                  <p>Une personne sans domicile fixe cherche à connaitre son éligibilité aux aides sociales</p>
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
                </div>
-               <div>
-                  <!-- parcours haut -->
-                  <div class="parcours-haut">
+            </div>
+            <!-- un item -->
+            <div class="parcours-lit-item d-flex">
+               <div class="etape-right-content d-flex">
+                  <div class="d-flex">
                      <div class="trait-longueur"></div>
                      <div class="etapes-container vert">
-                        <h4>Première étape</h4>
-                        <p>Le volontaire explique à la personne ses droits et ses résultats, elle lui donne un code et
-                           une
-                           adresse où elle pourra imprimer gratuitement ses informations, etc. Si la personne a un
-                           téléphone, le volontaire lui donne ses codes d’accès</p>
-                     </div>
-                     <div class="trait-longueur"></div>
-                     <div class="etapes-container vert">
-                        <h4>Première étape</h4>
-                        <p>Le volontaire explique à la personne ses droits et ses résultats, elle lui donne un code et
-                           une
-                           adresse où elle pourra imprimer gratuitement ses informations, etc. Si la personne a un
-                           téléphone, le volontaire lui donne ses codes d’accès</p>
+                        <h4>Première action :</h4>
+                        <p>Lors d’une maraude le volontaire demande à la personne sans domicile fixe si elle veut
+                           connaître ses aides sociales</p>
                      </div>
                   </div>
-                  <!-- parcours milieu -->
-                  <div class="parcours-milieu">
-                     <div class="trait-hauteur"></div>
+                  <div class="trait-hauteur-container d-flex">
                      <div class="trait-hauteur"></div>
                   </div>
-                  <!-- parcours fin -->
-                  <div class="parcours-fin">
-                     <div class="etapes-container">
-                        <h4>Fonctionnalité</h4>
-                        <p>Le volontaire explique à la personne ses droits et ses résultats, elle lui donne un code et
-                           une adresse où elle pourra imprimer gratuitement ses informations, etc. Si la personne a un
-                           téléphone, le volontaire lui donne ses codes d’accès</p>
-                     </div>
-                     <div class="etapes-container">
-                        <h4>Fonctionnalité</h4>
-                        <p>Le volontaire explique à la personne ses droits et ses résultats, elle lui donne un code et
-                           une adresse où elle pourra imprimer gratuitement ses informations, etc. Si la personne a un
-                           téléphone, le volontaire lui donne ses codes d’accès</p>
-                     </div>
-
+                  <div class="etapes-container">
+                     <h4>Fonctionnalité</h4>
+                     <p>Le volontaire renseigne l’identité et les donnnées de la personne (comme 1 jeune 1 solution en
+                        version sans adresse, etc)</p>
                   </div>
                </div>
             </div>
-            <h3>UserFlow :</h3>
-            <img src="medias\flow.png" alt="userflow" id="userflowgraph">
+
+            <!-- un item -->
+            <div class="parcours-lit-item d-flex">
+               <div class="etape-right-content d-flex">
+                  <div class="d-flex">
+                     <div class="trait-longueur"></div>
+                     <div class="etapes-container vert">
+                        <h4>Deuxième action :</h4>
+                        <p>Le volontaire explique à la personne ses droits et ses résultats, elle lui donne un code et
+                           une adresse où elle pourra imprimer gratuitement ses instuctions, etc. Si la personne a un
+                           téléphone, le volontaire lui donne ses codes d’accès</p>
+                     </div>
+                  </div>
+                  <div class="trait-hauteur-container d-flex">
+                     <div class="trait-hauteur"></div>
+                  </div>
+                  <div class="etapes-container">
+                     <h4>Fonctionnalité</h4>
+                     <p>Un code qui permet d’imprimer ses données.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- un item -->
+            <div class="parcours-lit-item d-flex">
+               <div class="etape-right-content d-flex">
+                  <div class="d-flex">
+                     <div class="trait-longueur"></div>
+                     <div class="etapes-container vert">
+                        <h4>Troisième action :</h4>
+                        <p>Un rendez-vous est proposé pour commencer à monter un dossier avec une association
+                           spécialisée</p>
+                     </div>
+                  </div>
+                  <div class="trait-hauteur-container d-flex">
+                     <div class="trait-hauteur"></div>
+                  </div>
+                  <div class="etapes-container">
+                     <h4>Fonctionnalité</h4>
+                     <p>Lien avec asso qui aide aux démarches et propose un suivi</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- un item -->
+            <div class="parcours-lit-item d-flex">
+               <div class="etape-right-content d-flex">
+                  <div class="d-flex">
+                     <div class="trait-longueur"></div>
+                     <div class="etapes-container vert">
+                        <h4>Quatrième action :</h4>
+                        <p>Le sans domicile fixe entre dans une base de données, et les bénévoles repasseront le voir
+                           lors de leurs maraudes pour suivre ses avancées, et s’assurer qu’il ne reste pas bloqué à
+                           cette étape.</p>
+                     </div>
+                     <div class="trait-longueur"></div>
+                  </div>
+                  <div class="trait-hauteur-container d-flex">
+                     <div class="trait-hauteur"></div>
+                  </div>
+                  <div class="etapes-container">
+                     <h4>Fonctionnalité</h4>
+                     <p>Mise en place d’une base de données des demandeurs d’aides pour rester au courant de leurs
+                        avancées dans leurs dossiers.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex">
+
+               <div class="plan-container">
+                  <h4>Situation idéale:</h4>
+                  <p>La personne sans domicile fixe a connaissance de ses aides et peut commencer ses démarches en toute
+                     sérénité.
+                  </p>
+               </div>
+            </div>
          </div>
+      </div>
+      <!-- version mobile -->
+      <div class="testing">
+         <div items-container>
+            <h3 class="numero-etape">1</h3>
+            <div class="item-testing">
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+               </div>
+               <div class="trait-hauteur"></div>
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div items-container>
+            <h3 class="numero-etape">1</h3>
+            <div class="item-testing">
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+               </div>
+               <div class="trait-hauteur"></div>
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div items-container>
+            <h3 class="numero-etape">1</h3>
+            <div class="item-testing">
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+               </div>
+               <div class="trait-hauteur"></div>
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div items-container>
+            <h3 class="numero-etape">1</h3>
+            <div class="item-testing">
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+               </div>
+               <div class="trait-hauteur"></div>
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div items-container>
+            <h3 class="numero-etape">1</h3>
+            <div class="item-testing">
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+               </div>
+               <div class="trait-hauteur"></div>
+               <div class="etapes-container">
+                  <h4>Situation :</h4>
+                  <p>Un bénévole approche une personne sans domicile fixe pour lui proposer de découvrir ses aides
+                     sociales
+                  </p>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <!-- userflow -->
+      <h3>UserFlow :</h3>
+      <img src="medias\flow.png" alt="userflow" id="userflowgraph">
+      </div>
       </section>
       <!-- haute fidéliter -->
       <section>
@@ -197,16 +374,18 @@
          <div id="faqAllDetail">
             <details class="FaqDetail">
                <summary> Comment créer le dossier d'un Sdf </summary>
-               Il suffit de lui faire répondre à un simple questionnaire pour obtenir un compte-rendu des aides dont il peut bénéficier.
+               Il suffit de lui faire répondre à un simple questionnaire pour obtenir un compte-rendu des aides dont il
+               peut bénéficier.
             </details>
 
             <details class="FaqDetail">
                <summary> Et ensuite ? </summary>
-               Si le SDF le souhaite il peut être enregistré dans notre base de données sécurisée afin d'obtenir un suivi.
+               Si le SDF le souhaite il peut être enregistré dans notre base de données sécurisée afin d'obtenir un
+               suivi.
             </details>
 
             <details class="FaqDetail">
-               <summary> Nos sources ? </summary> 
+               <summary> Nos sources ? </summary>
                Nous nous basons sur les statistique de l'INSEE ainsi que de Statistica.
             </details>
 
@@ -241,12 +420,11 @@
          <p class="icons"> Suivez nous : </p>
          <div class="icon-container">
 
-            <a href=""> <i class="fa-solid fa-phone"></i></a>
-            <a href=""> <i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-
+            <a href=""> <i class="i-icon fa-solid fa-phone"></i></a>
+            <a href=""> <i class="i-icon fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/?locale=fr_FR"><i class="i-icon fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="i-icon fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="i-icon fa-brands fa-youtube"></i></a>
 
          </div>
       </div>
@@ -264,6 +442,7 @@
    - Avenir
    - Contacter
 -->
+   <script src="script.js"></script>
 </body>
 
 </html>

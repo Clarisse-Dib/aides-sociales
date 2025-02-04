@@ -22,12 +22,13 @@
       <div id="nav-container">
          <nav>
             <div id="navbarLeft">
-               <img src="medias\logo-nav.png" alt="image" id="logoAsso">
-               <p id="navP">Association d'aide pour les sans abris</p>
+               <img src="medias/logo-nav.png" alt="logo" id="logoAsso">
+               <p id="navP">Association d'aide pour les sans-abris</p>
                <div id="traitNav"></div>
             </div>
+            <div id="burger-menu">☰</div> <!-- Icône burger -->
             <div id="navbarRight">
-               <a href="index.html">Accueil </a>
+               <a href="index.html">Accueil</a>
                <a href="documentation.html">Documentation</a>
                <a href="#footer"><button class="bouttons petitboutton">Rejoindre</button></a>
             </div>
@@ -82,40 +83,30 @@
             </div>
          </div>
       </section>
-
-      <!-- les différents graphique -->
-      <section id="graph-container">
-         <div class="container" id="containergraphique">
-            <div>
-               <h2 id="titregraph">Les Sdf en quelques chiffres</h2>
-               <ul id="listestats">
-                  <li class="elementslistestats">200 000 personnes sans-abri, hommes, femmes, et enfants, vivent dans
-                     des conditions précaires.</li>
-                  <li class="elementslistestats">
-                     145 000 places d’hébergements d’urgence sont disponibles, mais insuffisantes pour répondre à la
-                     demande.
-                  </li>
-                  <li class="elementslistestats">
-
-                     À Paris, 146 bébés sont nés dans la rue en 2023, une situation alarmante.
-                  </li>
-                  <li class="elementslistestats">
-
-                     ¼ des sans-abris ont un emploi, mais restent dans une précarité extrême.
-                  </li>
-                  <li class="elementslistestats">
-
-                     38% des sans-abris sont des femmes, souvent invisibles mais vulnérables aux violences.
-                  </li>
-                  <li class="elementslistestats">
-
-                     83% des SDF ressentent le rejet des passants, accentuant leur détresse sociale.</li>
-               </ul>
+      <section>
+         <h2 class="grandtitre2">Les associations qui ont déjà acceptées de <span id="rejoindrevert">nous
+            rejoindre</span></h2>
+      <!-- la banderole de mots clées -->
+      <div class="container">
+         <div>
+            <div class="banderole">
+               <p class="mots">Restos du cœur</p>
+               <p class="mots">Secours Populaire</p>
+               <p class="mots">AFM-Telethon</p>
+               <p class="mots">Armée du salut</p>
+               <p class="mots">Croix-Rouges Francaise</p>
+               <p class="mots">Armée du salut</p>
             </div>
-            <img src="medias\graph.png" alt="superbe graphique" id="graphique40">
+            <div class="banderole">
+               <p class="mots">Croix-Rouges Francaise</p>
+               <p class="mots">Armée du salut</p>
+               <p class="mots">Restos du cœur</p>
+               <p class="mots">Secours Catholique</p>
+               <p class="mots">AFM-Telethon</p>
+               <p class="mots">Restos du cœur</p>
+            </div>
          </div>
       </section>
-
       <!-- les étapes d'utilisation  -->
       <section id="presentationapp">
          <div>
@@ -132,8 +123,8 @@
                <p id="plan">Notre Plan</p>
                <div id="explicationappcontainer">
                   <div id="explicationsapp">
-                     <p>1. Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
-                     <p>3. Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
+                     <p id="explication1">1. Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
+                     <p id="explication3">3. Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
                   </div>
                   <p id="explication2">2. Lui faire répondre à un simple questionnaire.</p>
                </div>
@@ -142,29 +133,6 @@
       </section>
       <!-- les témoignages -->
       <section>
-         <h2 class="grandtitre2">Les associations qui ont déjà acceptées de <span id="rejoindrevert">nous
-               rejoindre</span></h2>
-         <!-- la banderole de mots clées -->
-         <div class="container">
-            <div>
-
-               <div class="banderole">
-                  <p class="mots">Restos du cœur</p>
-                  <p class="mots">Secours Populaire</p>
-                  <p class="mots">AFM-Telethon</p>
-                  <p class="mots">Armée du salut</p>
-                  <p class="mots">Croix-Rouges Francaise</p>
-                  <p class="mots">Armée du salut</p>
-               </div>
-               <div class="banderole">
-                  <p class="mots">Croix-Rouges Francaise</p>
-                  <p class="mots">Armée du salut</p>
-                  <p class="mots">Restos du cœur</p>
-                  <p class="mots">Secours Catholique</p>
-                  <p class="mots">AFM-Telethon</p>
-                  <p class="mots">Restos du cœur</p>
-               </div>
-            </div>
             <!-- avis -->
             <h3>Témoignages</h3>
             <div class="grande-carte">
@@ -194,14 +162,14 @@
                      on peut vraiment faire la différence pour ceux qui en ont le plus besoin."</p>
                </div>
             </div>
-            <p>*pour des raisons d’anonymat, les noms ont été remplacé par des alias</p>
+            <p class="anonymat">*pour des raisons d’anonymat, les noms ont été remplacé par des alias</p>
          </div>
       </section>
    </main>
 
    <footer id="footer">
-      <div class="container">
-         <h2>Nous contacter :</h2>
+      <div class="container footer-container">
+         <h2 class="titre-form">Nous contacter :</h2>
          <form action="submit">
             <div id="formulaire1">
                <input type="text" placeholder="Prénom" class="inputinfo">
@@ -220,17 +188,17 @@
          <p class="icons"> Suivez nous : </p>
          <div class="icon-container">
 
-            <a href=""> <i class="i fa-solid fa-phone"></i></a>
-            <a href=""> <i class="i fa-solid fa-envelope"></i></a>
-            <a href="https://www.facebook.com/?locale=fr_FR"><i class="i fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="i fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.youtube.com/"><i class="i fa-brands fa-youtube"></i></a>
+            <a href=""> <i class="i-icon fa-solid fa-phone"></i></a>
+            <a href=""> <i class="i-icon fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com/?locale=fr_FR"><i class="i-icon fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="i-icon fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="i-icon fa-brands fa-youtube"></i></a>
 
 
          </div>
       </div>
    </footer>
-
+   <script src="script.js"></script>
 </body>
 
 </html>
