@@ -10,9 +10,7 @@
    <link rel="stylesheet" type="text/css" href="styles.css" />
 
    <script src="https://kit.fontawesome.com/fcd6974846.js" crossorigin="anonymous"></script>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -22,8 +20,8 @@
       <div id="nav-container">
          <nav>
             <div id="navbarLeft">
-               <img src="medias/logo-nav.png" alt="logo" id="logoAsso">
-               <p id="navP">Association d'aide pour les sans-abris</p>
+               <img src="medias/logo.svg" alt="logo" id="logoAsso">
+               <p id="navP">ActiDroits</p>
                <div id="traitNav"></div>
             </div>
             <div id="burger-menu">☰</div> <!-- Icône burger -->
@@ -35,10 +33,16 @@
          </nav>
       </div>
       <div id="containerhun">
-         <h1 id="hunIndex">Les droits sociaux, un rempart contre l'invisible</h1>
+         <h1 id="hunIndex">ActiDroits – Les droits sociaux,
+            un <span id="mainwordslogan">rempart</span> contre l’invisible.</h1>
+         <p class="description-paragraphe">L'application qui aide les SDF en identifiant leurs besoins via un
+            questionnaire rapide et leur
+            donne un accès immédiat aux aides disponibles. ActiDroits : Simple, Efficace, Humain.</p>
       </div>
       <div id="introIndex">
-         <a href="documentation.html"><button class="bouttons grandboutton">Télécharger la démo</button></a>
+         <a
+            href="https://www.figma.com/proto/FpUkDjAMOuvlMgABfuTkeW/Droit-sociaux-wireframe?node-id=163-3086&t=odIvVxs1P9w0HcBk-1"><button
+               class="bouttons grandboutton">Tester la démo</button></a>
 
          <img id="benevole" src="medias\acceuil.png" alt="les bénévoles">
       </div>
@@ -51,9 +55,10 @@
          <div class="container" id="accrochecontainer">
 
             <div id="accroche">
-               
 
-               <h2 id="hdeuxaccrocheun"><img src="medias\donateur.svg" alt="image bénévole" id="imgBenevoledeux"> “Selon une étude, la France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”</h2>
+
+               <h2 id="hdeuxaccrocheun"><img src="medias\donateur.svg" alt="image bénévole" id="imgBenevoledeux">“Selon
+                  une étude, la France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”</h2>
             </div>
             <!-- <h2 id="hdeuxaccrochedeux">France compte environ 330 000 SDF, soit une augmentation de 100 % depuis 2012.”
             </h2> -->
@@ -67,102 +72,142 @@
          </div>
          </div>
       </section>
-      <!-- présentation de l'appli -->
+      <!-- fonctionalités de l'appli -->
       <section id="fondvert">
          <div class="container" id="presContainer">
-            <div id="presentationcontent">
-               <h2>Notre idée derrière ActiDroits</h2>
-               <p>Une application qui aide les SDF en identifiant leurs besoins via un questionnaire rapide et en leur
-                  donnant un accès immédiat aux aides disponibles. Simple, efficace, humain.</p>
-               <a href="documentation.html"> <button class="bouttons grandboutton" id="buttonwhite">Télécharger la
-                     démo</button></a>
+            <div id="presentation-container">
+               <h3 id="fonctions-titre"> Nos fonctionalités :</h3>
             </div>
-            <div id="presentationtel">
-               <img src="medias\telephone.svg" alt="photo de notre téléphone" id="imgTelUn">
+            <div id="presentation-content">
+               <div class="carte-presentation" >
+                  <img src="medias\fonction-3.png" alt="photo de notre téléphone" class="imgTel">
+                  <h4 class="fonctionaliter">Questionnaire</h4>
+                  <p>Un questionnaire simplifié pour détecter les aides dont vous pouvez bénéficier </p>
+               </div>
+               <div class="carte-presentation" >
+                  <img src="medias\fonction-1.png" alt="photo de notre téléphone" class="imgTel">
+                  <h4 class="fonctionaliter">Annuaire</h4>
+                  <p>Un annuaire d’acteurs sociaux prêts à vous aider</p>
+               </div>
+               <div class="carte-presentation" >
+                  <img src="medias\fonction-2.png" alt="photo de notre téléphone" class="imgTel">
+                  <h4 class="fonctionaliter">Suivi</h4>
+                  <p>Un suivi de votre dossier  </p>
+               </div>
 
             </div>
          </div>
       </section>
+
+      <!-- les étapes d'utilisation  -->
+      <section>
+         <div class="presentationapp">
+            <div>
+               <img id="telephone" src="medias/telephones.png" alt="les téléphones">
+            </div>
+            <div class="container">
+               <h2 id="partieapp" class="grandtitre2">Un accès aux droits sociaux pour les SDF</h2>
+               <div class="teste">
+                  <p id="plan">Notre Plan</p>
+                  <div id="explicationappcontainer">
+                     <div id="explicationsapp">
+                        <p id="explication1">1. Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
+                        <p id="explication3">3. Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
+                     </div>
+                     <p id="explication2">2. Lui faire répondre à un simple questionnaire.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </section>
+      <!-- télécharger app -->
+      <section id="fondvertdeux">
+         <div class="container" id="presContainerdeux">
+            <div id="presentationcontentdeux">
+               <h2 id="grandtitretelecharger">Téléchargez notre démo tout de suite !</h2>
+              <ul id="listetelecharger">
+              
+               <li>Gain de temps </li>
+               <li>Facilité d'utilisation</li>
+               <li>Traduction intégrée</li>
+               <li>Efficacité garantie</li>
+               
+              </ul>
+               <div class="store">
+                  <a href="https://www.apple.com/fr/app-store/"><img src="medias\appstore.svg" alt="appstore" class="logostore"></a>
+                  <a href="https://play.google.com/store/games?device=windows"><img src="medias\playstore.svg"
+                        alt="playstore" class="logostore"></a>
+               </div>
+            </div>
+            <div id="presentationteldeux">
+               <img src="medias/Frame.png" alt="photo de notre téléphone" class="imgTel">
+            </div>
+         </div>
+
+
+         </div>
+      </section>
+
+      <!-- la banderole de mots clées -->
       <section>
          <h2 class="grandtitre2">Les associations qui ont déjà acceptées de <span id="rejoindrevert">nous
-            rejoindre</span></h2>
-      <!-- la banderole de mots clées -->
-      <div class="container">
-         <div>
-            <div class="banderole">
-               <p class="mots">Restos du cœur</p>
-               <p class="mots">Secours Populaire</p>
-               <p class="mots">AFM-Telethon</p>
-               <p class="mots">Armée du salut</p>
-               <p class="mots">Croix-Rouges Francaise</p>
-               <p class="mots">Armée du salut</p>
-            </div>
-            <div class="banderole">
-               <p class="mots">Croix-Rouges Francaise</p>
-               <p class="mots">Armée du salut</p>
-               <p class="mots">Restos du cœur</p>
-               <p class="mots">Secours Catholique</p>
-               <p class="mots">AFM-Telethon</p>
-               <p class="mots">Restos du cœur</p>
-            </div>
-         </div>
-      </section>
-      <!-- les étapes d'utilisation  -->
-      <section id="presentationapp">
-         <div>
-            <img id="telephone" src="medias/telephones.png" alt="les téléphones">
-            <div class="store">
-               <a href="https://www.apple.com/fr/app-store/"><img src="medias\appstore.svg" alt="appstore"></a>
-               <a href="https://play.google.com/store/games?device=windows"><img src="medias\playstore.svg"
-                     alt="playstore"></a>
-            </div>
-         </div>
+               rejoindre</span></h2>
+
          <div class="container">
-            <h2 id="partieapp" class="grandtitre2">Un accès aux droits sociaux pour les SDF</h2>
-            <div class="teste">
-               <p id="plan">Notre Plan</p>
-               <div id="explicationappcontainer">
-                  <div id="explicationsapp">
-                     <p id="explication1">1. Créer le dossier d’un SDF rencontré lors d’une de vos maraudes.</p>
-                     <p id="explication3">3. Obtenir le compte-rendu des aides dont il peut bénéficier.</p>
-                  </div>
-                  <p id="explication2">2. Lui faire répondre à un simple questionnaire.</p>
+            <div id="toutebanderole">
+               <div class="banderole">
+                  <p class="mots">Restos du cœur</p>
+                  <p class="mots">Secours Populaire</p>
+                  <p class="mots">AFM-Telethon</p>
+                  <p class="mots">Armée du salut</p>
+                  <p class="mots">Croix-Rouges Francaise</p>
+                  <p class="mots">Armée du salut</p>
                </div>
+               <div class="banderole">
+                  <p class="mots">Croix-Rouges Francaise</p>
+                  <p class="mots">Armée du salut</p>
+                  <p class="mots">Restos du cœur</p>
+                  <p class="mots">Secours Catholique</p>
+                  <p class="mots">AFM-Telethon</p>
+                  <p class="mots">Restos du cœur</p>
+               </div>
+            </div>
+      </section>
+
+      <!-- les témoignages -->
+      <section class="temoignages">
+         <!-- avis -->
+         <h3 id="titretemoin">Témoignages</h3>
+         <div class="grande-carte">
+            <!-- 1 -->
+            <div class="carte">
+               <img class="personnes" src="medias\undraw_pic-profile_nr49.png" alt="première personne">
+               <h4>Jon d'hoe</h4>
+               <p>bénévole en maraude</p>
+               <p>“Grâce à cette application , je peux aider plus rapidement les personnes que je rencontre. Plus
+                  besoin de chercher des informations pendant des heures, tout est centralisé et adapté à leur
+                  situation."</p>
+            </div>
+            <!-- 2 -->
+            <div class="carte">
+               <img class="personnes" src="medias\undraw_male-avatar_zkzx.png" alt="deuxième personne">
+               <h4>Steven Stiivie</h4>
+               <p>utilisateur SDF</p>
+               <p>"On m’a aidé à trouver un hébergement en une soirée grâce à l’appli. C’est la première fois que je
+                  me sens écouté et que tout va aussi vite."</p>
+            </div>
+            <!-- 3 -->
+            <div class="carte">
+               <img class="personnes" src="medias\undraw_female-avatar_7t6k.png" alt="troisième personne">
+               <h4>Vinni Vitchi</h4>
+               <p>citoyenne solidaire</p>
+               <p>"Cette appli est une révolution. Elle montre qu’avec un peu de technologie et beaucoup d’humanité,
+                  on peut vraiment faire la différence pour ceux qui en ont le plus besoin."</p>
             </div>
          </div>
-      </section>
-      <!-- les témoignages -->
-      <section>
-            <!-- avis -->
-            <h3>Témoignages</h3>
-            <div class="grande-carte">
-               <!-- 1 -->
-               <div class="carte">
-                  <img class="personnes" src="medias\undraw_pic-profile_nr49.png" alt="première personne">
-                  <h4>Jon d'hoe</h4>
-                  <p>bénévole en maraude</p>
-                  <p>“Grâce à cette application , je peux aider plus rapidement les personnes que je rencontre. Plus
-                     besoin de chercher des informations pendant des heures, tout est centralisé et adapté à leur
-                     situation."</p>
-               </div>
-               <!-- 2 -->
-               <div class="carte">
-                  <img class="personnes" src="medias\undraw_male-avatar_zkzx.png" alt="deuxième personne">
-                  <h4>Steven Stiivie</h4>
-                  <p>utilisateur SDF</p>
-                  <p>"On m’a aidé à trouver un hébergement en une soirée grâce à l’appli. C’est la première fois que je
-                     me sens écouté et que tout va aussi vite."</p>
-               </div>
-               <!-- 3 -->
-               <div class="carte">
-                  <img class="personnes" src="medias\undraw_female-avatar_7t6k.png" alt="troisième personne">
-                  <h4>Vinni Vitchi</h4>
-                  <p>citoyenne solidaire</p>
-                  <p>"Cette appli est une révolution. Elle montre qu’avec un peu de technologie et beaucoup d’humanité,
-                     on peut vraiment faire la différence pour ceux qui en ont le plus besoin."</p>
-               </div>
-            </div>
-            <p class="anonymat">*pour des raisons d’anonymat, les noms ont été remplacé par des alias</p>
+         <p class="anonymat">*pour des raisons d’anonymat, les noms ont été remplacé par des alias</p>
          </div>
       </section>
    </main>

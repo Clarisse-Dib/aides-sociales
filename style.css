@@ -12,29 +12,32 @@
     font-weight: <weight>;
     font-style: normal;
   }; */
-
-
-h1 {
+  
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+ 
+*{
     font-family: "Syne", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+}
+h1 {
+    color: #353B2A;
     font-size: 55px;
+}
+#mainwordslogan{
+    color: #BBD395
 }
 
 :root {
     --couleur-titres: #353B2A;
-    /* Couleur principale */
-    --font-titres: "Syne", serif;
-    --font-textes: "Syne", serif;
     --border: 30Px;
-    /* Rayon des bordures */
-    --couleur-boutton: rgba(187, 211, 149, 1);
+    --couleur-boutton: #BBD395;
     --couleur-fond: rgb(187, 211, 149);
     --shadow: 0px 4px 4px 0px rgba(85, 85, 85, 0.3);
 }
 
 
-
+*{
+    box-sizing: border-box;
+}
 
 html {
     background-color: #FFFBF9;
@@ -73,11 +76,12 @@ a {
     align-items: center;
     justify-content: space-between;
     height: 52px;
-    background-color: rgba(187, 211, 149, 0.9);
+    background-color: #FFFBF9;
     backdrop-filter: blur(4px);
     border-radius: 30px;
     padding: 0 20px;
     transition: all 0.3s ease-in-out;
+    border: #353B2A solid 1px;
  }
  
  
@@ -99,8 +103,9 @@ a {
  }
  
  nav p {
-    font-size: 14px;
+    font-weight: bold;
     width: 154px;
+    color: #353B2A;
  }
  
  
@@ -110,12 +115,13 @@ a {
     gap: 27px;
     font-weight: bold;
     font-size: 16px;
+    color: #353B2A;
  }
  
  
  #navbarRight a {
     text-decoration: none;
-    color: #0A1100;
+    color: #353B2A;
     transition: color 0.3s ease-in-out;
  }
  
@@ -171,6 +177,12 @@ a {
     #navbarRight.active {
        display: flex;
     }
+    .bulle-container.titre-container{
+        align-items: center;
+    }
+    #leftimg, #rightImg{
+    width: 80%;
+    }
  }
 
 
@@ -182,7 +194,9 @@ a {
     margin: auto;
     padding-top: 90px;
 }
-
+.description-paragraphe{
+width: 58%;
+}
 #introIndex {
     display: flex;
     justify-content: space-around;
@@ -252,21 +266,69 @@ a {
     height: auto;
     padding: 50px 0;
 }
+#presentation-content{
+display: flex;
+gap: 97px;
+justify-content: center;
+padding-top: 10px;
 
-#presContainer {
-    display: flex;
-    padding: unset;
-    height: 100%;
+}
+#fondvertdeux{
+    background-color: #bbd395;
+    height: auto;
 }
 
-
-#presentationcontent {
+#presentationcontentdeux{
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     align-items: flex-start;
+    padding: 35px;
+}
+
+#grandtitretelecharger{
+    font-size: 43px;
+    margin: unset;
+}
+
+#listetelecharger{
+    font-size: 20px;
+}
+
+#presentationteldeux{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+#presContainerdeux{
+    height: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+
+.logostore{
+    height: 35px;
+}
+
+
+#presContainer {
+    height: 100%;
+}
+
+
+#presentation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+    
 }
 
 #presentationcontent h2 {
@@ -277,14 +339,8 @@ a {
     font-size: 27px;
 }
 
-#presentationtel {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
 
-#imgTelUn {
+#imgTel {
     height: 415px;
 }
 
@@ -303,7 +359,7 @@ h3 {
 }
 
 .grandtitre2 {
-    font-size: 60px;
+    font-size: 39px;
 }
 
 #titregraph {
@@ -323,11 +379,23 @@ p {
     padding: 5px;
 }
 
+.boutton:hover {
+    background-color: #E3EBD0;
+    transition: background-color 200ms;
+}
+
 .grandboutton {
     width: 300px;
     height: 43px;
+    font-size: 19px;
+    font-weight: bold;
     box-shadow: var(--shadow);
     color: var(--couleur-titres);
+}
+
+.grandboutton:hover {
+    background-color: #E3EBD0;
+    transition: 200ms;
 }
 
 .petitboutton {
@@ -336,6 +404,12 @@ p {
     font-size: 16px;
     font-weight: bold;
     color: var(--couleur-titres);
+    border: #353B2A solid 1px;
+}
+
+.petitboutton:hover {
+    background-color: #E3EBD0;
+    transition: 200ms;
 }
 
 .container {
@@ -377,10 +451,23 @@ p {
     padding-bottom: 25px;
 }
 
+#toutebanderole{
+    padding: 20px;
+}
+
 .banderole {
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+#titretemoin{
+    font-size: 39px;
+}
+
+.temoignages{
+    background-color: #bbd395;
+    padding: 20px;
 }
 
 .grande-carte {
@@ -397,6 +484,7 @@ p {
     box-shadow: var(--shadow);
     padding: 5px;
     border-radius: var(--border);
+    background-color: #FFFBF9;
 }
 
 .personnes {
@@ -415,15 +503,17 @@ p {
     width: 100%;
 }
 
-#presentationapp {
+.presentationapp {
     display: flex;
-    background-color: #bbd395;
+    background-color: #FFFBF9;
+    justify-content:center ;
 }
 
 .store {
     display: flex;
-    padding-left: 20px;
-}
+    gap: 5px;
+    }
+
 
 #explicationsapp {
     display: flex;
@@ -455,11 +545,17 @@ p {
     transition: background-color 200ms;
 }
 
+
+#sectionuserflow{
+    height: 1900px;
+}
+
 #footer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     background-color: rgba(187, 211, 149, 0.427);
+    padding-top: 70px;
 }
 
 #formulaire1 {
@@ -619,23 +715,24 @@ i {
     display: flex;
     flex-direction: column;
     background-color: var(--couleur-fond);
-    width: 51%;
+    width: 50vw;
     padding: 5%;
 
 }
 
-.nd {
-    margin-left : 6px;
-}
 
 .dividedSection {
     display: flex;
 }
 
+.personaImg, .graphiqueImg {
+    width: 50vw;
+}
 
 .personaImg img,
 .graphiqueImg img {
     margin: 5% 15%;
+    margin-right: 73px;
 
 }
 
@@ -656,15 +753,15 @@ i {
 
 #leftImg {
     align-self: start;
+    
+}
+#rightImg {
+    width: 40%;
 }
 
 #userflowgraph {
     padding-bottom: 20px;
     width: 100%;
-}
-
-.graphiqueImg img {
-    margin-right: 73px;
 }
 
 #FAQ {
@@ -674,6 +771,8 @@ i {
     gap: 10px;
     flex-direction: column;
     margin-bottom: 40px;
+    padding: 50px;
+
 }
 
 #faqAllDetail {
@@ -706,16 +805,38 @@ summary {
 summary::marker {
     color: #353B2A;
 }
-
-
+.carte-presentation{
+    width: 80%;
+    text-align: center;
+}
+.fonctions-titre{
+    font-size: 30px;
+}
+.fonctionaliter{
+    font-size: 24px;
+}
 .d-flex {
     display: flex;
 
 }
 
+#fonctions-titre{
+    font-size: 50px;
+}
+
 .trait-hauteur-container {
     width: 400px;
 }
+
+
+.demoapp{
+    background-color: #bbd395;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 #parcours-list-wrapper {
     flex-wrap: nowrap;
@@ -744,6 +865,11 @@ summary::marker {
     height: 160px;
 }
 
+.iframe{
+    width:"600";
+    height:"550";
+}
+
 #whitebackground{
     background-color: #FFFBF9;
 }
@@ -763,6 +889,7 @@ summary::marker {
         font-size: 35px;
         width: 100%;
         text-align: center;
+        
     }
 
     #introIndex {
@@ -815,18 +942,21 @@ summary::marker {
     #presContainer {
         flex-direction: column;
     }
-
-    #presentationcontent {
+    #presentation-container {
         width: 100%;
         align-items: center;
         text-align: center;
         padding-bottom: 10px;
     }
 
-    #presentationtel {
+    #presentation-content {
         width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-
+    .carte-presentation{
+        width: 80%;
+    }
     #containergraphique {
         flex-direction: column;
     }
@@ -849,7 +979,7 @@ summary::marker {
     }
 
     #graphique40 {
-        margin-right: 73px;
+        width: 100%;
     }
 
     #telephone {
@@ -861,7 +991,7 @@ summary::marker {
 
     }
 
-    #presentationapp {
+    .presentationapp {
         flex-direction: column;
     }
 
@@ -954,11 +1084,7 @@ summary::marker {
 
     .imgprsn {
         width: 95%;
-        margin: 3% !important;
-    }
-
-    #leftImg {
-        width: 370px;
+        margin: 2% !important;
     }
 
     .titre-container h2 {
@@ -971,6 +1097,7 @@ summary::marker {
 
     #userflowgraph {
         width: 360px;
+        padding-bottom: 40px;
     }
 
     #parcours-list-wrapper{
@@ -980,7 +1107,10 @@ summary::marker {
         margin: 38px;
     }
     /* documentation */
-
+    #docIntro {
+        height: 100%;}
+    #doc-img {
+    padding-bottom: 20px;}
 .testing{
     display: block;
     justify-content: center;
@@ -1029,16 +1159,67 @@ justify-content: center;
 gap: 5px;
 }
 
+.graphiqueImg img{
+    margin-right: 0%;
+    margin-left: 13%;
+}
+
 .dividedSection {
     flex-direction: column;
 }
-
+.chiffres-container{
+flex-direction: column-reverse;
+}
+.persona-container{
+flex-direction: column;
+}
+.personaImg, .graphiqueImg{
+    width: 100vw;
+}
+.graphique-container{
+flex-direction: column-reverse;
+}
+#leftImg{
+    width: 45%;
+    padding-left: 5px;
+}
+#rightImg{
+    padding-right: 5px;
+}
+#ActidroitsID{
+    margin: 5% 0%;
+}
 .greenbackground {
     width: 100%;
+        margin: 0px;
+        padding: 12px;
+}
+/* .presentationcontentdeux{
+    
+} */
+#grandtitretelecharger {
+    font-size: 22px;
+}
+.titres-padding{
+    padding-left: 20px;
+    padding-top: 45px;
 }
 
-#whitebackground{
-    background-color: #FFFBF9;
+#imgTel{
+    height: 280px;
+}
+
+.store{
+    flex-direction: column;
+}
+
+#sectionuserflow{
+    height: 564px;
+}
+
+.iframe{
+    height: 300px;
+    width: 350px;
 }
 
 }
